@@ -176,6 +176,7 @@ int main (int argc, char *argv[]) {
 }
 
 void usage(char *prog) {
+	fprintf(stderr, PACKAGE " version " VERSION "\n");
 	fprintf(stderr, "error: Usage: %s [-q] [-t timeout_sec] [-u timeout_usec] <host> <port>\n", prog);
 		exit(-1);
 }
