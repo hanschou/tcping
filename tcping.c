@@ -24,7 +24,7 @@
  *     2  user timeout
  */
 
-#define VERSION 1.3.5
+#define VERSION "1.3.5"
 
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -176,6 +176,7 @@ int main (int argc, char *argv[]) {
 }
 
 void usage(char *prog) {
+	fprintf(stderr, "%s version " VERSION "\n", prog);
 	fprintf(stderr, "error: Usage: %s [-q] [-t timeout_sec] [-u timeout_usec] <host> <port>\n", prog);
 		exit(-1);
 }
